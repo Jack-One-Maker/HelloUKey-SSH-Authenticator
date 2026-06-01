@@ -41,8 +41,8 @@ A native Windows SSH security authentication app that leverages the computer’s
 🔐 A small installation package of just a few dozen MB, saving hard drive space. <br>
 
 ## Download
-<a href="https://apps.microsoft.com/detail/9n0wbprdgf78?referrer=appbadge&cid=GitHub&mode=full" target="_blank"  rel="noopener noreferrer">
-	<img src="https://get.microsoft.com/images/zh-cn%20dark.svg" width="200"/>
+<a href="https://apps.microsoft.com/detail/9n0wbprdgf78?referrer=appbadge&cid=GitHubEN&mode=full" target="_blank"  rel="noopener noreferrer">
+	<img src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"/>
 </a>
 
 ## Operating System
