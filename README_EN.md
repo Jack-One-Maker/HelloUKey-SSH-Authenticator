@@ -1,3 +1,4 @@
+[English](README_EN.md) | [简体中文](README.md)
 <p align="center">
   <a href="https://apps.microsoft.com/detail/9n0wbprdgf78?referrer=appbadge&cid=GitHub&mode=full" target="_blank">
     <img src="https://store-images.s-microsoft.com/image/apps.10175.13912981154273113.82a12b87-2a83-4e8f-907f-b3bc680f02b6.0060320e-244d-42df-b211-b84193e28e57?h=170" width="150" alt="项目 LOGO">
