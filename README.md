@@ -5,7 +5,7 @@
   </a>
 </p>
 
-<h1 align="center">HelloUKey - Windows Hello SSH Agent & TPM Security Key</h1>
+<h1 align="center">HelloUKey - SSH Authenticator</h1>
 <p align="center">Protect your SSH keys using TPM and Windows Hello to enable secure SSH login authentication via fingerprint, facial recognition, or PIN.</p>
 
 ## Abstract
