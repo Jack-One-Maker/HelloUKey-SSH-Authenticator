@@ -5,7 +5,7 @@
   </a>
 </p>
 
-<h1 align="center">HelloUKey - Windows Hello 安全密钥 & SSH 免密登录工具</h1>
+<h1 align="center">HelloUKey - SSH Authenticator</h1>
 <p align="center">使用 TPM 和 Windows Hello 保护 SSH 密钥，通过指纹、人脸识别或PIN码实现安全的 SSH 登录认证</p>
 
 ## 摘要
