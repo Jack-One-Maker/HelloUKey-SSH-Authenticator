@@ -48,5 +48,31 @@
 ## 操作系统
 💽 Windows 10 1903（内部版本18362.0）及更高版本
 
-## 文档
+## 常见问题 - FAQ
+
+- Q: 使用这款应用时是否需要额外购买 USB 硬件密钥？<br>
+  A: 不需要，HelloUKey 基于电脑自带的 TPM硬件生成并管理密钥，它是作为 SSH Agent 存在的一个认证器。<br>
+
+- Q: 是否支持从外部导入私钥？<br>
+  A: 目前仅支持直接从基于 TPM 的 Windows Hello 生成 SSH 密钥并提供硬件级别的安全认证，不排除在未来的计划中加入导入功能。<br>
+
+- Q: 在 Windows 上使用 PuTTY 或 WinSCP，可以用 HelloUKey 替代 Pageant 实现免密登录吗？<br>
+  A: 是的，它同时作为 OpenSSH 代理与 Pageant 代理，因此它支持 WinSCP等以 Pageant 作为代理的客户端。<br>
+
+- Q: 为什么登录 SSH 时弹出的是PIN码输入窗口，而别人电脑出现的是指纹和人脸识别弹窗？<br>
+  A: 因为指纹识别需要指纹识别器并配置 Windows Hello，除了电脑自带的指纹识别器，您也可以外接支持 Windows Hello 的指纹识别器。<br>
+
+- Q: 应用是否支持在 Surface 等 Windows 平板上使用？<br>
+  A: 非常适合在此类设备上使用，它支持原生 x64、x86 与 Arm64 三种处理器架构，只要满足操作系统版本大于等于 Win10 1903(18362) 即可安装使用。<br>
+
+- Q: 是否可以将一个 HelloUKey 密钥用于多个服务端？<br>
+  A: 完全可以使用同一个私钥来管理你的 Server 或设备的登录认证。<br>
+
+- Q: 应用是否适用于 Git代码仓库的 SSH 认证？<br>
+  A: 非常适合，Git 在 Windows 中使用 OpenSSH 的 ssh 工具，它支持直接与代理交互完成认证。**[使用 HelloUKey 生成 GitHub 认证密钥](./docs/github-config.md)**<br>
+
+- Q: 应用都支持哪些 SSH 服务端的认证？<br>
+  A: 理论上所有支持 SSH Server 的服务器、网络设备、终端等均支持，仅需要将公钥配置到服务端即可。<br>
+
+## 更多文档
 **[相关文档](./docs/README.md)**
