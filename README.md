@@ -48,5 +48,39 @@ A native Windows SSH security authentication app that leverages the computer’s
 ## Operating System
 💽 Windows 10 version 1903 (18362.0) and later
 
+## FAQ
+
+
+- Q: Do I need to purchase an additional USB hardware key to use this app?<br>
+A: No, HelloUKey generates and manages keys using your computer’s built-in TPM hardware; it functions as an authenticator that acts as an SSH agent.<br>
+
+
+- Q: Does it support importing private keys from external sources?<br>
+A: Currently, it only supports generating SSH keys directly from TPM-based Windows Hello and provides hardware-level security authentication. We do not rule out adding an import feature in future updates.<br>
+
+
+- Q: When using PuTTY or WinSCP on Windows, can I use HelloUKey to replace Pageant for password-less login?<br>
+A: Yes, it functions as both an OpenSSH agent and a Pageant agent, so it supports clients like WinSCP that use Pageant as their agent. <br>
+
+
+- Q: Why does a PIN entry window pop up when I log in to SSH, while others see fingerprint and facial recognition prompts on their computers? <br>
+A: Because fingerprint recognition requires a fingerprint reader and Windows Hello configuration. In addition to the computer’s built-in fingerprint reader, you can also connect an external fingerprint reader that supports Windows Hello. <br>
+
+
+- Q: Does the app support use on Windows tablets such as the Surface? <br>
+A: It is ideal for use on such devices. It supports the three native processor architectures: x64, x86, and Arm64. As long as the operating system version is Windows 10 1903 (18362) or later, you can install and use it. <br>
+
+
+- Q: Can a single HelloUKey key be used for multiple servers? <br>
+A: You can certainly use the same private key to manage login authentication for your servers or devices. <br>
+
+
+- Q: Is the app suitable for SSH authentication with Git code repositories? <br>
+A: It’s ideal. Git uses the OpenSSH ssh tool on Windows, which supports direct interaction with proxies to complete authentication. **[Generating GitHub Authentication Keys with HelloUKey](./docs/github-config.md)**<br>
+
+
+- Q: Which SSH servers does the application support for authentication?<br>
+A: In theory, it supports all servers, network devices, terminals, and other systems that support SSH servers; you simply need to configure the public key on the server.<br>
+
 ## Documents
 **[Related Documents](./docs/README.md)**
